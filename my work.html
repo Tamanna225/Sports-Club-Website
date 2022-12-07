@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html Lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=""width=device_width, initial-scale=1.0">
+<title>Sports Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body background="front bg3.jpg">
+
+    <div id="box">
+
+
+    <div id="logo"> <img src="logo.jpg" height="50" weight="50"> SPORTS CLUB </div>
+    <div id="navbar">
+<h1 align = "right">
+        <ul>
+            <li><a href="#about">About</a></li>
+		<li><a href = "#club">Sports</a>
+		</li>
+		<li><a href="sform.html">Subscription</a></li>
+            <li><a href="contact us.html">CONTACT US</a></li>
+        </ul></h1>
+    </div>
+<div id="image">
+    
+</div>
+<div class="content">
+    <div class="textBox">
+        <h2>That's what<br><span>I like</span></h2>
+        <p>
+         
+        </p>
+
+</div>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="volleyball.webp" width="140%" height="300">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="swimming.jpeg" width="140%" height="300">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="badminton.webp" width="140%" height="300">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="footbal.jpeg" width="140%" height="300">
+  <div class="text"></div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script> <b>
+<center><button class="stn"><a href="C:\Users\taman\Desktop\html project\sform.html">Start Training Now </a></button></center>
+<div class="row">
+  <div class="column">
+<section id="club">
+    <div id="lbox">
+<p><h2>Clubs</h2><br><br></p><h3>
+<a href="Volleyball.html"> Volleyball </a><br><br>
+<a href="Football.html"> Football </a><br><br>
+<a href="Badminton.html"> Badminton </a><br><br>
+<a href="swimming.html"> Swimming </a></h3>
+</div>
+</section>
+  </div>
+  <div class="column">
+<section id="about">
+<font size = "5"><h1> About the Club </h1> </font><br>
+    <font size="4"><p style="font-family:Comic Sans MS;">Every dream needs to be driven by passion to make it come true. Sports Club is one such dream, formed by keeping sheer passion for the
+ gentleman’s game-Cricket. Sports Club was conceived by a group of people headed by Chinubhai Chimanbhai; the then Mayor and leading 
+businessman from Ahmedabad in 1965.
+
+The Sports Club gets its flamboyant and elegant design in the heart of city from the renowned architect Charles Correa who 
+also happens to be the designer of the soulful Gandhi Ashram. With a beautiful design and sprawling space; Sports Club has gradually
+ spread its branches for other sports and has become an epitome of entertainment and leisure in the thriving city of Ahmedabad. Today,
+ Sports Club is one of the most regal clubs of Ahmedabad and renowned for its state of the art amenities and splendid aura.
+</p></font>
+</section>
+  </div>
+</div>
+
+</body>
+</html>

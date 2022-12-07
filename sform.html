@@ -1,0 +1,90 @@
+<html>
+<head>
+<title> form </title>
+<style>
+div {
+  width: 500px;
+  border: 10px solid white;
+  padding: 0px;
+  margin: 30px;
+background: #ADD8E6; 
+}
+</style>
+</head>
+<body background= "C:\Users\taman\Desktop\html project\bg1.jpg">
+
+<center>
+<form action="C:\Users\taman\Desktop\html project\message.html" method="POST">
+<div>
+<p>
+<h1 align = "center"> Club Registration Form Form </h1>
+<label> Title </label>
+<label>
+<input type="radio" name = "Title" value = "mr">
+Mr
+</label>
+<label>
+<input type = "radio" name = "Title" value="mrs">
+Mrs
+</label>
+<label>
+<input type = "radio" name = "Title" value = "miss">
+Miss
+</label>
+</p>
+<p>
+<label> First Name </label>
+<input type = "text" placeholder = "first_name" required>
+</p>
+<p>
+<label> Last name </label>
+<input type = "text" placeholder = "last_name">
+</p>
+<p>
+<label> DOB </label>
+<input type = "date" placeholder = "DOB" required>
+</p>
+<p>
+<label> Email </label>
+<input type = "email" placeholder = "email" required>
+</p>
+<p>
+<label> Phone Number </label>
+<input type = "tel" placeholder = "phone" required>
+</p>
+<p>
+<label> Address </label>
+<textarea maxlength="100" rows = "1" cols = "5" required></textarea>
+</p>
+<p>
+<label> Sports </label>
+<select required>
+<option> Select </option>
+<option> Voleyball </option>
+<option> Football </option>
+<option> Badminton </option>
+<option> Swimming </option>
+</select>
+</p>
+<p>
+<label> Password </label>
+<input type="password" placeholder="password" required>
+</p>
+<p>
+<label> Confirm password </label>
+<input type = "password" placeholdeer = "password_confirm" required>
+</p>
+
+<p>
+<p>
+<label>
+<input type = "checkbox" value = "terms" required>
+I agree to the <a href = "C:\Users\taman\Desktop\html project\Term and Conditions.docx"> terms and conditions </a>
+</label>
+</p>
+<button style = "background-color:pink;>
+<p>
+<input type = "submit" value="Submit" onclick="saveFile()"> Submit</p></button>
+</form> </center>
+</div>
+</html>
